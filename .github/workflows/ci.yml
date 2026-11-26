@@ -9,6 +9,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     name: Ex${{matrix.elixir}}/OTP${{matrix.otp}}
+    timeout-minutes: 5
     strategy:
       matrix:
         elixir: ["1.15.8", "1.16.3", "1.17.3", "1.18.2"]
